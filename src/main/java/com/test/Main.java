@@ -8,11 +8,14 @@ import org.apache.poi.ss.usermodel.Workbook;
 
 import java.io.FileOutputStream;
 
-/**
- * Created by jirka on 13.9.2017.
- */
 public class Main {
 
+    /**
+     * Add cell to row
+     * @param row
+     * @param index
+     * @param value
+     */
     private static void addCell(Row row, int index, String value) {
         Cell cell = row.createCell(index);
         cell.setCellValue(value);
